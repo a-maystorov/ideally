@@ -41,7 +41,7 @@ export default function Login() {
 
       {isPending && (
         <button className="btn" disabled>
-          Loading
+          Logging in...
         </button>
       )}
 
