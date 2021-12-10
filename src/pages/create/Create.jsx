@@ -1,7 +1,15 @@
 import { useState } from 'react';
+import Select from 'react-select';
 
 // styles
 import './Create.css';
+
+const categories = [
+  { value: 'development', label: 'Development' },
+  { value: 'design', label: 'Design' },
+  { value: 'sales', label: 'Sales' },
+  { value: 'marketing', label: 'Marketing' },
+];
 
 export default function Create() {
   const [name, setName] = useState('');
@@ -14,7 +22,14 @@ export default function Create() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(name, details, dueDate, category.value, assignedUsers);
+    console.log(
+      name,
+      details,
+      dueDate,
+      category.value,
+      assignedUsers,
+      category.value
+    );
   };
 
   return (
@@ -52,7 +67,10 @@ export default function Create() {
 
         <label>
           <span>Project category:</span>
-          {/* categoty select here */}
+          <Select
+            options={categories}
+            onChange={(option) => setCategory(option)}
+          />
         </label>
 
         <label>
