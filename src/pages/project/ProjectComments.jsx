@@ -1,9 +1,16 @@
+// hooks
 import { useState } from 'react';
-import Avatar from '../../components/Avatar';
-import { timestamp } from '../../firebase/config';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { useFirestore } from '../../hooks/useFirestore';
-import formatDistanceTonow from 'date-fns/formatDistanceToNow';
+
+// firebase
+import { timestamp } from '../../firebase/config';
+
+// components
+import Avatar from '../../components/Avatar';
+
+// utils
+import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
 export default function ProjectComments({ project }) {
   const { updateDocument, response } = useFirestore('projects');
@@ -41,7 +48,7 @@ export default function ProjectComments({ project }) {
               </div>
               <div className="comment-date">
                 <p>
-                  {formatDistanceTonow(comment.createdAt.toDate(), {
+                  {formatDistanceToNow(comment.createdAt.toDate(), {
                     addSuffix: true,
                   })}
                 </p>

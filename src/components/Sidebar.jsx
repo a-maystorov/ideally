@@ -1,5 +1,9 @@
 import { NavLink } from 'react-router-dom';
+
+// components
 import Avatar from './Avatar';
+
+// hooks
 import { useAuthContext } from '../hooks/useAuthContext';
 
 // styles & images

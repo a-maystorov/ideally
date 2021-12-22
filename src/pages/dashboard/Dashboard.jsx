@@ -1,5 +1,8 @@
+// components
 import ProjectFilter from './ProjectFilter';
 import ProjectList from '../../components/ProjectList';
+
+// hooks
 import { useCollection } from '../../hooks/useCollection';
 import { useState } from 'react';
 import { useAuthContext } from '../../hooks/useAuthContext';

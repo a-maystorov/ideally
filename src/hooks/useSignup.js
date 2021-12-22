@@ -1,10 +1,13 @@
+// hooks
 import { useState, useEffect } from 'react';
+import { useAuthContext } from './useAuthContext';
+
+// firebase
 import {
   projectAuth,
   projectStorage,
   projectFirestore,
 } from '../firebase/config';
-import { useAuthContext } from './useAuthContext';
 
 export const useSignup = () => {
   const [isCancelled, setIsCancelled] = useState(false);

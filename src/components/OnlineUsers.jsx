@@ -1,4 +1,7 @@
+// hooks
 import { useCollection } from '../hooks/useCollection';
+
+// components
 import Avatar from './Avatar';
 
 // styles
