@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# The Horde
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A project management site created with react and firebase.
 
-## Available Scripts
+### What is The Horde?
 
-In the project directory, you can run:
+This is a project build with the intent of helping a small team to better organize and manage their responsibilities when building a new app or adding features to an existing one. The theme of the site is based on a popular video game faction I love to play with friends, named 'World of Warcraft', but do not let that distarct you from the main focus of the app, which is creating and assinging team members to that specific project you are looking to build.
 
-### `npm start`
+### Technologies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  1. Hooks
 
-### `npm test`
+  2. Custom hooks used to interact with firebase.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     - I know some them are already build in with Firebase v9, but I wanted to challenge and push myself for learning purposes.
 
-### `npm run build`
+- Firebase version 8:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  1. Authentication
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  2. Firestore Database
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  3. Storage
 
-### `npm run eject`
+  4. Hosting
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- JavaScript
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Dependencies:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  1. Date-fns
 
-## Learn More
+     - only used in the project comments component to format the date.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Preview:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://sirdev97.github.io/magic-memory/
