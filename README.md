@@ -10,21 +10,21 @@ This is a project build with the intent of helping a small team to better organi
 
 - React:
 
-  1. Hooks
+  - Hooks
 
-  2. Custom hooks used to interact with firebase.
+  - Custom hooks used to interact with firebase.
 
-     - I know some them are already build in with Firebase v9, but I wanted to challenge and push myself for learning purposes.
+    - I know some them are already build in with Firebase v9, but I wanted to challenge and push myself for learning purposes.
 
 - Firebase version 8:
 
-  1. Authentication
+  - Authentication
 
-  2. Firestore Database
+  - Firestore Database
 
-  3. Storage
+  - Storage
 
-  4. Hosting
+  - Hosting
 
 - JavaScript
 
@@ -32,9 +32,7 @@ This is a project build with the intent of helping a small team to better organi
 
 - Dependencies:
 
-  1. Date-fns
-
-     - only used in the project comments component to format the date.
+  - Date-fns: used in the project comments component to format the date.
 
 ## Setup
 
@@ -70,6 +68,9 @@ https://the-horde-app-7a17d.web.app/login
 
 ## To Do:
 
+```
 - Add edit profile component.
 
 - Add private messages between users.
+
+```
