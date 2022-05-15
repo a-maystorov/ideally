@@ -84,7 +84,7 @@ export default function Signup() {
 
       {isPending && (
         <button className="btn" disabled>
-          Loading
+          Loading...
         </button>
       )}
 

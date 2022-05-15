@@ -1,15 +1,17 @@
 import Avatar from '../../components/Avatar';
-import { useFirestore } from '../../hooks/useFirestore';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { useHistory } from 'react-router-dom';
+import { doc, deleteDoc } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 
 export default function ProjectSummary({ project }) {
-  const { deleteDocument } = useFirestore('projects');
   const { user } = useAuthContext();
   const history = useHistory();
 
   const handleComplete = (e) => {
-    deleteDocument(project.id);
+    const docRef = doc(db, 'projects', project.id);
+
+    deleteDoc(docRef);
     history.push('/');
   };
 

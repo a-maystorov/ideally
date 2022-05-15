@@ -1,10 +1,10 @@
 // hooks
 import { useState } from 'react';
 import { useAuthContext } from '../../hooks/useAuthContext';
-import { useFirestore } from '../../hooks/useFirestore';
 
 // firebase
-import { timestamp } from '../../firebase/config';
+import { doc, updateDoc, Timestamp } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 
 // components
 import Avatar from '../../components/Avatar';
@@ -13,31 +13,32 @@ import Avatar from '../../components/Avatar';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
 export default function ProjectComments({ project }) {
-  const { updateDocument, response } = useFirestore('projects');
   const [newComment, setNewComment] = useState('');
   const { user } = useAuthContext();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const docRef = doc(db, 'projects', project.id);
+
     const commentToAdd = {
       displayName: user.displayName,
       photoURL: user.photoURL,
       content: newComment,
-      createdAt: timestamp.fromDate(new Date()),
+      createdAt: Timestamp.fromDate(new Date()),
       id: Math.random(),
     };
-    await updateDocument(project.id, {
+
+    await updateDoc(docRef, {
       comments: [...project.comments, commentToAdd],
     });
 
-    if (!response.error) setNewComment('');
+    setNewComment('');
   };
 
   return (
     <div className="project-comments">
       <h4>Project Comments</h4>
-
       <ul>
         {project.comments.length > 0 &&
           project.comments.map((comment) => (
