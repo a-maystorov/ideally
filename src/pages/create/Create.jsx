@@ -1,6 +1,6 @@
 // hooks
 import { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useCollection } from '../../hooks/useCollection';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
@@ -19,7 +19,7 @@ const categories = [
 ];
 
 export default function Create() {
-  const history = useHistory();
+  let navigate = useNavigate();
   const { documents } = useCollection('users');
   const [users, setUsers] = useState([]);
   const { user } = useAuthContext();
@@ -85,7 +85,7 @@ export default function Create() {
 
     addDoc(colRef, project);
 
-    if (!formError) history.push('/');
+    if (!formError) navigate('/');
   };
 
   return (

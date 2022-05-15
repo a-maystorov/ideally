@@ -1,18 +1,18 @@
 import Avatar from '../../components/Avatar';
 import { useAuthContext } from '../../hooks/useAuthContext';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { doc, deleteDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 
 export default function ProjectSummary({ project }) {
   const { user } = useAuthContext();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleComplete = (e) => {
     const docRef = doc(db, 'projects', project.id);
 
     deleteDoc(docRef);
-    history.push('/');
+    navigate('/');
   };
 
   return (
