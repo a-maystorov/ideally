@@ -20,36 +20,37 @@ function App() {
 
   return (
     <div className="App">
+      {user && <Sidebar />}
       {authIsReady && (
         <div className="container">
-          {user && <Sidebar />}
-          <Navbar />
-
-          <Routes>
-            <Route
-              path="/"
-              element={user ? <Dashboard /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/create"
-              element={user ? <Create /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/projects/:id"
-              element={user ? <Project /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/login"
-              element={!user ? <Login /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/signup"
-              element={!user ? <Signup /> : <Navigate to="/" />}
-            />
-          </Routes>
-          {user && <OnlineUsers />}
+          <div className="routes">
+            <Navbar />
+            <Routes>
+              <Route
+                path="/"
+                element={user ? <Dashboard /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/create"
+                element={user ? <Create /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/projects/:id"
+                element={user ? <Project /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/login"
+                element={!user ? <Login /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/signup"
+                element={!user ? <Signup /> : <Navigate to="/" />}
+              />
+            </Routes>
+          </div>
         </div>
       )}
+      {user && <OnlineUsers />}
     </div>
   );
 }
