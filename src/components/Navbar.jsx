@@ -6,7 +6,7 @@ import { useAuthContext } from '../hooks/useAuthContext';
 
 // styles & images
 import './Navbar.css';
-import Banner from '../assets/banner.png';
+import Logo from '../assets/logo.svg';
 
 export default function Navbar() {
   const { logout, isPending } = useLogout();
@@ -16,8 +16,8 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
         <Link to="/" className="logo">
-          <img src={Banner} alt="dojo logo" />
-          <span>The Horde</span>
+          <img src={Logo} alt="logo" />
+          <span>Ideally</span>
         </Link>
 
         {!user && (
