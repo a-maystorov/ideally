@@ -45,10 +45,7 @@ As stated above it is mainly a basic management tool for small teams but my main
 ![ideally5](https://user-images.githubusercontent.com/76817540/170010978-622fcfab-3ad5-401c-ae08-d47f623cedc4.jpeg)
 
 ---
-> :warning: **NOTE**:
 
-The website was build only for larger screens due to time constraints.
+## Webite preview: https://ideally-project-management.web.app/login
 
----
-
-
+> :warning: **NOTE**: The website was build only for larger screens due to time constraints.
