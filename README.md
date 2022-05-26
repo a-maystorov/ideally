@@ -48,4 +48,4 @@ As stated above it is mainly a basic management tool for small teams but my main
 
 ## Webite preview: https://ideally-project-management.web.app/login
 
-> :warning: **NOTE**: The website was build only for larger screens due to time constraints.
+> :warning: **NOTE**: The website is currently not responsive for tablets and phones.
