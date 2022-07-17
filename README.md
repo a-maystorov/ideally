@@ -1,10 +1,10 @@
-# The Horde
+# Ideally
 
-A project management site created with react and firebase.
+A project management and idea sharing site created with react and firebase.
 
-## What is The Horde?
+## Purpouse of Ideally
 
-This is a project build with the intent of helping a small team to better organize and manage their responsibilities when building a new app or adding features to an existing one. The theme of the site is based on a popular video game faction I love to play with friends, named 'World of Warcraft', but do not let that distarct you from the main focus of the app, which is creating and assinging team members to that specific project you are looking to build.
+As stated above it is mainly a basic management tool for small teams but my main goal for this project was to test my react and firebase skills. The project was initially built with react v17, react-router-dom v5, and firebase v8 but has been updated since which resulted in a more clean and shorter code base.
 
 ## Technologies:
 
@@ -13,10 +13,8 @@ This is a project build with the intent of helping a small team to better organi
   - Hooks
 
   - Custom hooks used to interact with firebase.
-
-    - I know some them are already build in with Firebase v9, but I wanted to challenge and push myself for learning purposes.
-
-- Firebase version 8:
+ 
+- Firebase version 9:
 
   - Authentication
 
@@ -34,43 +32,20 @@ This is a project build with the intent of helping a small team to better organi
 
   - Date-fns: used in the project comments component to format the date.
 
-## Setup
+## Preview screenshots:
 
-To run this project, install it locally using npm:
+![ideally1](https://user-images.githubusercontent.com/76817540/170010911-542d7c2d-d715-45a5-944d-b3ee60fcb9d6.jpeg)
 
-1. Download the ZIP files.
+![ideally2](https://user-images.githubusercontent.com/76817540/170010925-63e4b2da-b38b-48f4-bb07-b15f177fa632.jpeg)
 
-2. Navigate to the project root directory using your terminal of choice (I use Ubuntu).
+![ideally3](https://user-images.githubusercontent.com/76817540/170010937-9922f52d-7200-46a3-a5ec-a315543c8d89.jpeg)
 
-3. Run `npm install` to install all of the project dependencies.
+![ideally4](https://user-images.githubusercontent.com/76817540/170010954-916d0ecb-a09a-45e2-88e1-b289d50875c9.jpeg)
 
-4. Run `code .` to open your code editor (optional).
+![ideally5](https://user-images.githubusercontent.com/76817540/170010978-622fcfab-3ad5-401c-ae08-d47f623cedc4.jpeg)
 
-5. Run `npm run start` to start the project locally.
+---
 
-6. Test User Account:
+## Webite preview: https://ideally-project-management.web.app/login
 
-   - testUser@mail.dev
-
-   - 123456
-
-## Preview:
-
-https://the-horde-app-7a17d.web.app/login
-
-![alt text](https://github.com/SirDev97/the-horde/blob/main/src/assets/dashboard.jpeg?raw=true)
-
-![alt text](https://github.com/SirDev97/the-horde/blob/main/src/assets/create.jpeg?raw=true)
-
-![alt text](https://github.com/SirDev97/the-horde/blob/main/src/assets/filter.jpeg?raw=true)
-
-![alt text](https://github.com/SirDev97/the-horde/blob/main/src/assets/projectDetails.jpeg?raw=true)
-
-## To Do:
-
-```
-- Add edit profile component.
-
-- Add private messages between users.
-
-```
+> :warning: **NOTE**: The website is currently not responsive for tablets and phones.
