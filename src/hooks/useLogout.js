@@ -26,6 +26,8 @@ export const useLogout = () => {
 
       dispatch({ type: 'LOGOUT' });
 
+      setIsPending(false);
+
       if (!isCancelled) {
         setIsPending(false);
         setError(null);

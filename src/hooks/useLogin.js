@@ -36,9 +36,39 @@ export const useLogin = () => {
     }
   };
 
+  const guestLogin = async () => {
+    setError(null);
+    setIsPending(true);
+
+    try {
+      const res = await signInWithEmailAndPassword(
+        auth,
+        'test@dev.io',
+        '123456'
+      );
+      const userRef = doc(db, 'users', res.user.uid);
+
+      await updateDoc(userRef, {
+        online: true,
+      });
+
+      dispatch({ type: 'LOGIN', payload: res.user });
+
+      if (!isCancelled) {
+        setIsPending(false);
+        setError(null);
+      }
+    } catch (err) {
+      if (!isCancelled) {
+        setError(err.message);
+        setIsPending(false);
+      }
+    }
+  };
+
   useEffect(() => {
     return () => setIsCancelled(true);
   }, []);
 
-  return { login, isPending, error };
+  return { guestLogin, login, isPending, error };
 };
