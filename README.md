@@ -4,13 +4,13 @@ A project management and idea sharing site created with react and firebase.
 
 ## Purpouse of Ideally
 
-As stated above it is mainly a basic management tool for small teams but my main goal for this project was to test my react and firebase skills. The project was initially built with react v17, react-router-dom v5, and firebase v8 but has been updated since which resulted in a more clean and shorter code base.
+As stated above it is mainly a basic management tool for small teams but my main goal for this project was to test my react and firebase skills. The project was initially built with react v17, react-router-dom v5, and firebase v8 but has been updated since which resulted in a more clean, shorter and modularized code base which I assume was the intent behind the firebase v9 update.
 
 ## Technologies:
 
 - React:
 
-  - Hooks
+  - Built in Hooks
 
   - Custom hooks used to interact with firebase.
  
