@@ -43,8 +43,8 @@ export const useLogin = () => {
     try {
       const res = await signInWithEmailAndPassword(
         auth,
-        'test@dev.io',
-        '123456'
+        process.env.REACT_APP_TEST_USER_NAME,
+        process.env.REACT_APP_TEST_USER_PASSWORD
       );
       const userRef = doc(db, 'users', res.user.uid);
 

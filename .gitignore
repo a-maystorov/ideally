@@ -28,5 +28,8 @@ firebase/
 /.firebaserc
 
 # github
-
 /.github
+
+# environment variables file
+.env
+.env.test
