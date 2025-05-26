@@ -164,4 +164,4 @@ MIT
 
 ---
 
-© 2023 Ideally - Crafted with ❤️ by Alkin Maystorov
+© 2022 Ideally - Crafted with ❤️ by Alkin Maystorov
